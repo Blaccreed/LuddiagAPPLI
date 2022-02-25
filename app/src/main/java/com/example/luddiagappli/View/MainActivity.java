@@ -1,8 +1,8 @@
-package com.example.luddiagappli;
-
+package com.example.luddiagappli.View;
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
+import com.example.luddiagappli.Model.database;
+import com.example.luddiagappli.R;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -11,5 +11,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         //code a inclure
+        database db = new database();
     }
 }
