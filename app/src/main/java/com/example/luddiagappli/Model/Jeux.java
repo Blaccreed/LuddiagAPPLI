@@ -13,15 +13,17 @@ public class Jeux {
     private int id;
     private  String nom;
     private String categorie;
+    private String image;
 
     //private List<Note> listeDesNotes;
 
     //Temporaire
 
-    public Jeux(int id, String nom, String categorie) {
+    public Jeux(int id, String nom, String categorie, String image) {
         this.id = id;
         this.nom = nom;
         this.categorie = categorie;
+        this.image = image;
     }
 
     public static List<Jeux> getTousLesJeux()
@@ -34,7 +36,7 @@ public class Jeux {
             ResultSet rs = st.executeQuery(sql);
             while(rs.next())
             {
-                Jeux j = new Jeux(rs.getInt("id_jeu"), rs.getString("nom_jeu"), rs.getString("categorie_jeu"));
+                Jeux j = new Jeux(rs.getInt("id_jeu"), rs.getString("nom_jeu"), rs.getString("categorie_jeu"), rs.getString("image"));
                 jeuxList.add(j);
 
             }
@@ -67,5 +69,37 @@ public class Jeux {
                 ", nom='" + nom + '\'' +
                 ", categorie='" + categorie + '\'' +
                 '}';
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public String getNom() {
+        return nom;
+    }
+
+    public void setNom(String nom) {
+        this.nom = nom;
+    }
+
+    public String getCategorie() {
+        return categorie;
+    }
+
+    public void setCategorie(String categorie) {
+        this.categorie = categorie;
+    }
+
+    public String getImage() {
+        return image;
+    }
+
+    public void setImage(String image) {
+        this.image = image;
     }
 }
