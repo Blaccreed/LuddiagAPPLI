@@ -4,6 +4,8 @@ import android.os.Bundle;
 import android.os.StrictMode;
 import android.util.Log;
 
+import com.example.luddiagappli.Model.Animateur;
+import com.example.luddiagappli.Model.User;
 import com.example.luddiagappli.Model.database;
 import com.example.luddiagappli.R;
 
@@ -26,10 +28,13 @@ public class MainActivity extends AppCompatActivity {
             StrictMode.setThreadPolicy(policy);
 
         }
+        //Animateur.ValiderNote(1,33);
+       // User.InscriptionJoueur("Calvin", "YAPI", "ezarzte", "qaet", "zeaet", "zta", "eazet");
         //Example de récupération de donnée
         database db = new database();
         try {
             Statement st = db.getExtraConnection().createStatement();
+            //User.SeConnecter("admin@flip.fr","admin");
             String sql = "SELECT * FROM user_flip";
             ResultSet rs = st.executeQuery(sql);
             while(rs.next())
@@ -38,9 +43,12 @@ public class MainActivity extends AppCompatActivity {
                 Log.d("DB" , username);
             }
         } catch (SQLException e) {
-            Log.d("DB", "Error getting querry");
+            Log.d("DB", "Erreur pour insert !");
             e.printStackTrace();
         }
+      //User.SeConnecter("dylan.hacquart@flip.fr", "dylan");
+
+        //Grille.GetJeuxGrille(1);
     }
 
 
