@@ -8,7 +8,7 @@ import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Jeux {
+public class Jeu {
 
     private int id;
     private  String nom;
@@ -19,16 +19,16 @@ public class Jeux {
 
     //Temporaire
 
-    public Jeux(int id, String nom, String categorie, String image) {
+    public Jeu(int id, String nom, String categorie, String image) {
         this.id = id;
         this.nom = nom;
         this.categorie = categorie;
         this.image = image;
     }
 
-    public static List<Jeux> getTousLesJeux()
+    public static List<Jeu> getTousLesJeux()
     {
-        List<Jeux> jeuxList = new ArrayList<>();
+        List<Jeu> jeuxList = new ArrayList<>();
         String sql = "SELECT * FROM jeu";
         database db = new database();
         try {
@@ -36,7 +36,7 @@ public class Jeux {
             ResultSet rs = st.executeQuery(sql);
             while(rs.next())
             {
-                Jeux j = new Jeux(rs.getInt("id_jeu"), rs.getString("nom_jeu"), rs.getString("categorie_jeu"), rs.getString("image"));
+                Jeu j = new Jeu(rs.getInt("id_jeu"), rs.getString("nom_jeu"), rs.getString("categorie_jeu"), rs.getString("image"));
                 jeuxList.add(j);
 
             }
