@@ -17,7 +17,7 @@ public abstract class User {
     protected String adresse_user;
     protected String cd_postal_user;
 
-    public User(int id_user, String nom_user, String mdp_user, String mail_user, String phone_user, String adresse_user, String cd_postal_user)
+    public User(int id_user, String nom_user, String prenom_user, String mdp_user, String mail_user, String phone_user, String adresse_user, String cd_postal_user)
     {
         this.id_user = id_user;
         this.nom_user = nom_user;
@@ -74,6 +74,8 @@ public abstract class User {
             while(rs.next())
             {
                 String mail = rs.getString("mail_user");
+                Animateur animateur = new Animateur(rs.getInt("id_user"), rs.getString("nom_user"), rs.getString("prenom_user"),rs.getString("mdp_user"),rs.getString("mail_user"),
+                        rs.getString("phone_user"), rs.getString("adresse_user"), rs.getString("cd_postal_user"), rs.getString("stand"));
                 Log.d("MAIL", mail);
             }
 
@@ -84,27 +86,28 @@ public abstract class User {
     }
 
     public static void InscriptionJoueur(String nom_user, String prenom_user, String mdp_user, String mail_user, String phone_user, String adresse_user, String cd_postal_user){
-        String sql = "INSERT INTO user_flip (nom_user, prenom_user, mdp_user, mail_user, phone_user, adresse_user, cd_postal_user)  VALUES( ?1, ?2 , ?3, ?4, ?5, ?6, ?7);  " +
-                "INSERT INTO joueur(id_user, nombre_points) VALUES(SELECT MAX(id_user) FROM user_flip, 0);";
+        //public static void InscriptionJoueur(){
 
-        String sql2 = "SELECT * FROM user_flip WHERE mail_user='" +  mail_user + "'";
-
-        database db = new database();
+            String sql = "INSERT INTO user_flip(nom_user, prenom_user, mdp_user, mail_user, phone_user, adresse_user, cd_postal_user)  VALUES( ?, ? , ?, ?, ?, ?, ?);" +
+                    "INSERT INTO Joueur VALUES((SELECT max(id_user) FROM user_flip), 0)";
+        database conn = new database();
+        PreparedStatement myStmt;
         try {
-            PreparedStatement st = db.getExtraConnection().prepareStatement(sql);
-            st.setString(1, nom_user);
-            st.setString(2, prenom_user);
-            st.setString(3, mdp_user);
-            st.setString(4, mail_user);
-            st.setString(5, phone_user);
-            st.setString(5, adresse_user);
-            st.setString(6, cd_postal_user);
-            st.executeUpdate();
+            myStmt = conn.getExtraConnection().prepareStatement(sql);
+            myStmt.setString(1, nom_user);
+            myStmt.setString(2, prenom_user);
+            myStmt.setString(3, mdp_user);
+            myStmt.setString(4, mail_user);
+            myStmt.setString(5, phone_user);
+            myStmt.setString(6, adresse_user);
+            myStmt.setString(7, cd_postal_user);
+            myStmt.executeUpdate();
 
-        } catch (SQLException e) {
-            Log.d("DB", "Erreur inscription");
-            e.printStackTrace();
+        } catch (SQLException throwables) {
+            Log.d("DB", "Impossible d'inscrire");
+            throwables.printStackTrace();
         }
-    }   
+    }
+
 
 }

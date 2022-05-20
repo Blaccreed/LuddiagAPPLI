@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
 
         }
         //Animateur.ValiderNote(1,33);
-       // User.InscriptionJoueur("Calvin", "YAPI", "ezarzte", "qaet", "zeaet", "zta", "eazet");
+        User.InscriptionJoueur("'tezaet'", "'tezaetz'", "'Taeztzte'", "'teafaea'", "'tEZAZE'", "'EZZAZt'", "'tZEREZA'");
         //Example de récupération de donnée
         database db = new database();
         try {

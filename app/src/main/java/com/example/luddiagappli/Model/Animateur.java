@@ -8,8 +8,8 @@ import java.sql.SQLException;
 public class Animateur extends User{
     String stand;
 
-    public Animateur(int id_user, String nom_user, String mdp_user, String mail_user, String phone_user, String adresse_user, String cd_postal_user, String  stand ){
-        super(id_user, nom_user, mdp_user, mail_user, phone_user, adresse_user, cd_postal_user);
+    public Animateur(int id_user, String nom_user, String prenom_user, String mdp_user, String mail_user, String phone_user, String adresse_user, String cd_postal_user, String stand){
+        super(id_user, nom_user, prenom_user, mdp_user, mail_user, phone_user, adresse_user, cd_postal_user);
         this.stand = stand;
     }
 
