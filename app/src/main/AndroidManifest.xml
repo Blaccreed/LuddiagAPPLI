@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.luddiagappli">
-
-    <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    package="com.example.luddiagpagemarine">
 
     <application
         android:allowBackup="true"
@@ -11,22 +8,46 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.LuddiagAPPLI">
+        android:theme="@style/Theme.LuddiagPageMarine">
         <activity
-            android:name=".View.PageGrille"
+            android:name=".ValidationActivity"
             android:exported="false" />
         <activity
-            android:name=".View.PageAccueil"
+            android:name=".IntroTrois"
             android:exported="false" />
         <activity
-            android:name=".View.PageRegister"
-            android:exported="false" />
-        <activity
-            android:name=".View.PageLogin"
-            android:exported="false" />
-        <activity
-            android:name=".View.MainActivity"
+            android:name=".IntroUn"
             android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".IntroDeux"
+            android:exported="false" />
+        <activity
+            android:name=".FicheJeuActivity"
+            android:exported="true" />
+        <!--
+<activity
+            android:name=".FicheJeuActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        -->
+        <activity
+            android:name=".VoteTermineActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Splashscreen"
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
