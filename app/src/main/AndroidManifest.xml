@@ -13,8 +13,8 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.LuddiagAPPLI">
         <activity
-            android:name=".View.PageGrille"
-            android:exported="false" />
+            android:name=".View.MainActivity"
+            android:exported="true" />
         <activity
             android:name=".View.PageAccueil"
             android:exported="false" />
@@ -25,7 +25,7 @@
             android:name=".View.PageLogin"
             android:exported="false" />
         <activity
-            android:name=".View.MainActivity"
+            android:name=".View.PageGrille"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
