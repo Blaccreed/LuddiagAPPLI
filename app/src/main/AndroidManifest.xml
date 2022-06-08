@@ -19,13 +19,13 @@
             android:name=".View.PageAccueil"
             android:exported="false" />
         <activity
-            android:name=".View.PageRegister"
+            android:name=".View.PageGrille"
             android:exported="false" />
         <activity
             android:name=".View.PageLogin"
             android:exported="false" />
         <activity
-            android:name=".View.PageGrille"
+            android:name=".View.PageRegister"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
