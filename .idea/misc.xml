@@ -25,8 +25,8 @@
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.2776268115942029" />
         <entry key="app/src/main/res/layout/activity_page_accueil.xml" value="0.20969202898550723" />
         <entry key="app/src/main/res/layout/activity_page_grille.xml" value="0.3901565551757813" />
-        <entry key="app/src/main/res/layout/activity_page_login.xml" value="0.2776268115942029" />
-        <entry key="app/src/main/res/layout/activity_page_register.xml" value="0.415216064453125" />
+        <entry key="app/src/main/res/layout/activity_page_login.xml" value="0.23744964599609364" />
+        <entry key="app/src/main/res/layout/activity_page_register.xml" value="0.16393280029296875" />
       </map>
     </option>
   </component>

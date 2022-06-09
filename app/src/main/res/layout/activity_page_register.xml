@@ -23,7 +23,7 @@
         android:textColorHint="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/InputNom"
-        app:layout_constraintTop_toBottomOf="@+id/register" />
+        app:layout_constraintTop_toBottomOf="@+id/Connexion" />
 
     <EditText
         android:id="@+id/InputMdp"
@@ -127,14 +127,14 @@
         app:layout_constraintTop_toBottomOf="@+id/InputNom" />
 
     <TextView
-        android:id="@+id/register"
+        android:id="@+id/Connexion"
         android:layout_width="246dp"
         android:layout_height="48dp"
         android:fontFamily="@font/alike"
         android:text="S'enregistrer :"
         android:textAlignment="center"
         android:textColor="@color/black"
-        android:textSize="24sp"
+        android:textSize="34sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -160,7 +160,7 @@
         android:textColorHint="@color/black"
         app:layout_constraintEnd_toStartOf="@+id/inpuPrenom"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/register" />
+        app:layout_constraintTop_toBottomOf="@+id/Connexion" />
 
     <Button
         android:id="@+id/BoutonEnregistrer"
