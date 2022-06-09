@@ -15,4 +15,9 @@
     <color name="greendark">#53933F</color>
     <color name="orangelight">#F3AE1B</color>
     <color name="orangedark">#BB6008</color>
+    <color name="vert">#55b25b</color>
+    <color name="bleu">#2dafe6</color>
+    <color name="jaune">#55b25b</color>
+    <color name="rose">#ffdd00</color>
+
 </resources>
