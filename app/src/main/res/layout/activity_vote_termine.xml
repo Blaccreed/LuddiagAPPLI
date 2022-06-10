@@ -4,17 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/fondlogo"
     tools:context=".View.VoteTermine">
-
-        <View
-            android:id="@+id/view"
-            android:layout_width="428dp"
-            android:layout_height="236dp"
-            android:background="@color/fondlogo"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
 
         <ImageView
             android:id="@+id/imageView"
