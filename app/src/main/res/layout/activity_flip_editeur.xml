@@ -4,12 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/fondavecblanc"
     tools:context=".flip_editeur">
 
     <Button
         android:id="@+id/button3"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
         android:text="Enfant"
         android:backgroundtint="@color/black"
         app:layout_constraintBottom_toTopOf="@+id/button8"
@@ -19,8 +20,8 @@
 
     <Button
         android:id="@+id/button7"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
         android:text="Reflexion"
         app:layout_constraintBottom_toTopOf="@+id/button9"
         app:layout_constraintStart_toEndOf="@id/button3"
@@ -29,8 +30,8 @@
 
     <Button
         android:id="@+id/button8"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
         android:text="Divertissement"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@id/button7"
@@ -40,8 +41,8 @@
 
     <Button
         android:id="@+id/button9"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
         android:backgroundtint="@color/black"
         android:text="éco-ludique"
         app:layout_constraintBottom_toBottomOf="parent"
