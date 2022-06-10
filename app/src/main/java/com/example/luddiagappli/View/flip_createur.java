@@ -13,25 +13,11 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 public class flip_createur extends AppCompatActivity {
 
-    private FloatingActionButton boutonArriere;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_flip_createur);
-
-        boutonArriere = (FloatingActionButton) findViewById(R.id.boutonArriere);
-        boutonArriere.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v2) {
-                openMain();
-            }
-        });
     }
 
-    public void openMain() {
-        Intent intent = new Intent(this, PageGrille.class);
-        startActivity(intent);
-    }
 }

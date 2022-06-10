@@ -7,8 +7,21 @@
     android:background="@drawable/fond"
     tools:context=".View.PageGrille">
 
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/boutonArriereConnexion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="320dp"
+        android:clickable="true"
+        android:contentDescription="retour"
+        app:backgroundTint="@color/bluedark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/ic_menu_revert" />
+
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/buttonCreateur"
         android:layout_width="0dp"
         android:layout_height="80dp"
         android:layout_marginStart="24dp"
@@ -20,13 +33,13 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button5"
+        android:id="@+id/buttonEditeur"
         android:layout_width="0dp"
         android:layout_height="80dp"
         android:layout_marginStart="24dp"
         android:layout_marginEnd="24dp"
         android:text="Grille trophée éditeurs"
-        app:layout_constraintBottom_toTopOf="@+id/button2"
+        app:layout_constraintBottom_toTopOf="@+id/buttonCreateur"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

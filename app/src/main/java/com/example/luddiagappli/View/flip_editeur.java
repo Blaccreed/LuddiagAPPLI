@@ -13,4 +13,6 @@ public class flip_editeur extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_flip_editeur);
     }
+
+
 }

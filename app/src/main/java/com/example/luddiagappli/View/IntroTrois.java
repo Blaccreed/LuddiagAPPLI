@@ -24,7 +24,7 @@ public class IntroTrois extends AppCompatActivity {
         boutonAvant.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                openFicheJeu();
+                openMain2();
             }
         });
 
@@ -42,7 +42,7 @@ public class IntroTrois extends AppCompatActivity {
         startActivity(intent2);
     }
 
-    public void openFicheJeu() {
+    public void openMain2() {
         Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
     }

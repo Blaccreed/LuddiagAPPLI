@@ -7,16 +7,19 @@
     tools:context=".View.IntroUn"
     android:background="@drawable/introun">
 
-<Button
-    android:id="@+id/boutonAvant"
-    android:layout_width="137dp"
-    android:layout_height="53dp"
-    android:layout_marginEnd="16dp"
-    android:layout_marginBottom="580dp"
-    android:text="OK !"
-    app:icon="@android:drawable/ic_media_ff"
-    app:layout_constraintBottom_toBottomOf="parent"
-    app:layout_constraintEnd_toEndOf="parent" />
+    <Button
+        android:id="@+id/boutonAvant"
+        android:layout_width="137dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="692dp"
+        android:fontFamily="@font/alike"
+        android:text="OK !"
+        app:icon="@android:drawable/ic_media_ff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
