@@ -38,5 +38,10 @@ dependencies {
 
     //PostgreSQL database
     implementation 'org.postgresql:postgresql:42.2.5'
+
+    //Ajout de gif
+    implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.23'
+
+
     
 }
