@@ -11,9 +11,9 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:text="Enfant"
+        android:backgroundtint="@color/black"
         app:layout_constraintBottom_toTopOf="@+id/button8"
         app:layout_constraintEnd_toStartOf="@+id/button7"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -42,7 +42,7 @@
         android:id="@+id/button9"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:theme="@style/Button.White"
+        android:backgroundtint="@color/black"
         android:text="éco-ludique"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
