@@ -13,9 +13,6 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.LuddiagAPPLI">
         <activity
-            android:name=".editeur_cat_enfant"
-            android:exported="false" />
-        <activity
             android:name=".flip_createur"
             android:exported="false" />
         <activity
