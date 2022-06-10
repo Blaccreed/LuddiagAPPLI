@@ -109,6 +109,7 @@
             android:layout_marginTop="4dp"
             android:layout_marginEnd="352dp"
             android:clickable="true"
+            android:contentDescription="bouton retour"
             app:backgroundTint="#FFEB3B"
             app:layout_constraintEnd_toEndOf="@+id/imageView8"
             app:layout_constraintTop_toTopOf="parent"
