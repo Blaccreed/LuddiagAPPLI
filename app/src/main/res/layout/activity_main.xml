@@ -7,7 +7,7 @@
     tools:context=".View.MainActivity">
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/buttonconnexion"
         android:layout_width="0dp"
         android:layout_height="108dp"
         android:layout_marginStart="24dp"
@@ -19,7 +19,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/buttoninscription"
         android:layout_width="280dp"
         android:layout_height="108dp"
         android:text="Inscription"
