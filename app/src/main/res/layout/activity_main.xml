@@ -61,4 +61,15 @@
         app:layout_constraintTop_toBottomOf="@+id/buttonconnexion"
         app:srcCompat="@drawable/logotest" />
 
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        app:layout_constraintBottom_toBottomOf="@+id/connexion3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/connexion3"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/ic_dialog_info" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
