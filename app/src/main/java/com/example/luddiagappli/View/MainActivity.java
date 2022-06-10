@@ -12,6 +12,7 @@ import com.example.luddiagappli.Model.Animateur;
 import com.example.luddiagappli.Model.User;
 import com.example.luddiagappli.Model.database;
 import com.example.luddiagappli.R;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -21,6 +22,8 @@ public class MainActivity extends AppCompatActivity {
 
     private Button buttonconnexion;
     private Button buttoninscription;
+
+    private FloatingActionButton boutonInfo;
 
 
     @Override
@@ -79,7 +82,19 @@ public class MainActivity extends AppCompatActivity {
                     openInscription();
                 }
             });
+
+
+        boutonInfo = (FloatingActionButton) findViewById(R.id.boutonInfo);
+        boutonInfo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v3) {
+                openInfo();
+            }
+        });
+
         }
+
+
 
         public void openConnexion() {
             Intent intent2 = new Intent(this, PageLogin.class);
@@ -91,6 +106,10 @@ public class MainActivity extends AppCompatActivity {
             startActivity(intent);
         }
 
+        public void openInfo() {
+            Intent intent = new Intent(this, IntroUn.class);
+            startActivity(intent);
+        }
 
 
 }
