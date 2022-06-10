@@ -12,30 +12,39 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.LuddiagAPPLI">
+
         <activity
             android:name=".View.flip_createur"
             android:exported="false" />
+
         <activity
             android:name=".View.flip_editeur"
             android:exported="false" />
+
         <activity
-            android:name=".FicheJeu"
+            android:name=".View.FicheJeu"
             android:exported="false" />
+
         <activity
-            android:name=".ValidationActivity"
+            android:name=".View.ValidationActivity"
             android:exported="false" />
+
         <activity
-            android:name=".VoteTermine"
+            android:name=".View.VoteTermine"
             android:exported="false" />
+
         <activity
-            android:name=".IntroTrois"
+            android:name=".View.IntroTrois"
             android:exported="false" />
+
         <activity
-            android:name=".IntroDeux"
+            android:name=".View.IntroDeux"
             android:exported="false" />
+
         <activity
-            android:name=".IntroUn"
+            android:name=".View.IntroUn"
             android:exported="false" />
+
         <activity
             android:name=".View.MainActivity"
             android:exported="true">
@@ -45,27 +54,34 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
+
         <activity
             android:name=".View.PageAccueil"
             android:exported="false" />
+
         <activity
             android:name=".View.PageGrille"
             android:exported="false" />
+
         <activity
             android:name=".View.PageLogin"
             android:exported="false" />
+
         <activity
             android:name=".View.PageRegister"
             android:exported="false" />
+
         <activity
             android:name=".View.SplashScreen"
             android:exported="true"
             android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
         </activity>
     </application>
 
