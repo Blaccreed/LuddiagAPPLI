@@ -25,7 +25,7 @@
 
     <TextView
         android:id="@+id/connexion2"
-        android:layout_width="358dp"
+        android:layout_width="0dp"
         android:layout_height="77dp"
         android:layout_marginTop="4dp"
         android:fontFamily="@font/alike"
