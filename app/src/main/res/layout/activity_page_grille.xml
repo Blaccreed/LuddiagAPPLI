@@ -4,12 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/fond"
     tools:context=".View.PageGrille">
 
     <Button
         android:id="@+id/button2"
-        android:layout_width="285dp"
+        android:layout_width="0dp"
         android:layout_height="80dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
         android:text="Grille trophée créateurs"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -18,8 +21,10 @@
 
     <Button
         android:id="@+id/button5"
-        android:layout_width="285dp"
+        android:layout_width="0dp"
         android:layout_height="80dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
         android:text="Grille trophée éditeurs"
         app:layout_constraintBottom_toTopOf="@+id/button2"
         app:layout_constraintEnd_toEndOf="parent"
