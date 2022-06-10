@@ -4,21 +4,20 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/fondlogo"
+    android:background="@color/white"
     tools:context=".View.VoteTermine">
+
 
         <ImageView
             android:id="@+id/imageView"
             android:layout_width="419dp"
             android:layout_height="187dp"
-            android:layout_marginTop="236dp"
+            android:layout_marginTop="4dp"
             android:scaleType="centerCrop"
             android:src="@drawable/wave"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
-
 
         <ImageView
             android:id="@+id/imageView2"
@@ -26,10 +25,11 @@
             android:layout_height="109dp"
             android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
-            android:layout_marginTop="122dp"
+            android:layout_marginTop="144dp"
             android:layout_marginEnd="132dp"
             android:src="@drawable/logotest"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.952"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -40,9 +40,8 @@
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
             android:layout_marginStart="8dp"
-            android:layout_marginTop="180dp"
+            android:layout_marginTop="308dp"
             android:layout_marginEnd="106dp"
-            android:layout_marginBottom="264dp"
             android:lineSpacingExtra="4dp"
             android:text="Merci pour votre vote ! "
             android:textAlignment="center"
@@ -50,17 +49,18 @@
             android:textColor="#160E2C"
             android:textSize="20sp"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="@+id/imageView" />
 
         <Button
-            android:id="@+id/button2"
+            android:id="@+id/buttonRetour"
             android:layout_width="184dp"
             android:layout_height="62dp"
             android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
             android:layout_marginStart="8dp"
-            android:layout_marginTop="511dp"
+            android:layout_marginTop="252dp"
             android:layout_marginEnd="111dp"
             android:backgroundTint="#FF5722"
             android:text="Retour à la liste"
@@ -69,7 +69,7 @@
             android:textSize="16sp"
             app:icon="@android:drawable/ic_menu_revert"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView" />
 
@@ -79,8 +79,8 @@
             android:layout_height="166dp"
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
-            android:layout_marginEnd="11dp"
-            android:layout_marginBottom="11dp"
+            android:layout_marginEnd="4dp"
+            android:layout_marginBottom="28dp"
             android:src="@drawable/confetti"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent" />
@@ -91,13 +91,12 @@
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
-            android:layout_marginTop="364dp"
             android:layout_marginEnd="75dp"
-            android:layout_marginBottom="216dp"
+            android:layout_marginBottom="784dp"
             android:src="@android:drawable/btn_star_big_on"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.81"
+            app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

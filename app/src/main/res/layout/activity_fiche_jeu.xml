@@ -55,7 +55,7 @@
             android:id="@+id/textView2"
             android:layout_width="159dp"
             android:layout_height="50dp"
-            android:layout_marginBottom="140dp"
+            android:layout_marginBottom="176dp"
             android:text="Votre note"
             android:textAppearance="@style/TextAppearance.AppCompat.Display1"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -64,12 +64,13 @@
 
         <ImageView
             android:id="@+id/imageView8"
-            android:layout_width="419dp"
-            android:layout_height="222dp"
-            android:layout_marginBottom="596dp"
+            android:layout_width="411dp"
+            android:layout_height="163dp"
+            android:layout_marginBottom="648dp"
             android:background="#1C77BF"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:srcCompat="@drawable/wave" />
 
@@ -77,8 +78,8 @@
             android:id="@+id/textView3"
             android:layout_width="270dp"
             android:layout_height="50dp"
-            android:layout_marginStart="100dp"
-            android:layout_marginTop="4dp"
+            android:layout_marginStart="92dp"
+            android:layout_marginTop="16dp"
             android:text="SAUVE MOUTON"
             android:textAppearance="@style/TextAppearance.AppCompat.Display1"
             app:layout_constraintStart_toStartOf="parent"
@@ -102,25 +103,12 @@
 
         </androidx.cardview.widget.CardView>
 
-        <com.google.android.material.floatingactionbutton.FloatingActionButton
-            android:id="@+id/floatingActionButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="4dp"
-            android:layout_marginEnd="352dp"
-            android:clickable="true"
-            android:contentDescription="bouton retour"
-            app:backgroundTint="#FFEB3B"
-            app:layout_constraintEnd_toEndOf="@+id/imageView8"
-            app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@android:drawable/ic_menu_revert" />
-
         <TextView
             android:id="@+id/textView4"
             android:layout_width="315dp"
             android:layout_height="176dp"
             android:layout_marginEnd="48dp"
-            android:layout_marginBottom="204dp"
+            android:layout_marginBottom="256dp"
             android:background="#D0F3EFEC"
             android:ems="10"
             android:fontFamily="sans-serif"
@@ -131,6 +119,6 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent" />
 
-        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
     </androidx.constraintlayout.widget.ConstraintLayout>

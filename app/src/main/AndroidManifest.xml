@@ -18,7 +18,7 @@
             android:exported="false" />
 
         <activity
-            android:name=".editeur_cat_enfant"
+            android:name=".View.EditeurCatEnfant"
             android:exported="false" />
         
         <activity

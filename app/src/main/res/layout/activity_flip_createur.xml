@@ -7,6 +7,20 @@
     android:background="@drawable/fondavecblanc"
     tools:context=".View.flip_createur">
 
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/boutonArriere"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="344dp"
+        android:clickable="true"
+        android:contentDescription="retour"
+        app:backgroundTint="@color/bluedark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/ic_menu_revert" />
+
+
     <TextView
         android:id="@+id/connexion"
         android:layout_width="0dp"
@@ -56,7 +70,7 @@
         app:layout_constraintTop_toBottomOf="@+id/connexion2" />
 
     <Button
-        android:id="@+id/button10"
+        android:id="@+id/buttonEnfant"
         android:layout_width="0dp"
         android:layout_height="86dp"
         android:layout_marginStart="32dp"
@@ -86,7 +100,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button10" />
+        app:layout_constraintTop_toBottomOf="@+id/buttonEnfant" />
 
     <ImageView
         android:id="@+id/imageView5"

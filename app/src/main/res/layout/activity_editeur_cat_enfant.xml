@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/fondavecblanc"
-    tools:context=".editeur_cat_enfant">
+    tools:context=".View.EditeurCatEnfant">
 
     <TextView
         android:id="@+id/connexion6"
@@ -40,8 +40,22 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.077" />
 
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/boutonArriere"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="344dp"
+        android:clickable="true"
+        android:contentDescription="retour"
+        app:backgroundTint="@color/bluedark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/ic_menu_revert" />
+
+
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/buttonPanel1"
         android:layout_width="0dp"
         android:layout_height="50dp"
         android:layout_marginTop="100dp"
@@ -60,7 +74,7 @@
         android:text="ESCARGOT SPRINT"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button4" />
+        app:layout_constraintTop_toBottomOf="@+id/buttonPanel1" />
 
     <Button
         android:id="@+id/button13"
