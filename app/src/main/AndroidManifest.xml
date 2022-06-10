@@ -18,6 +18,10 @@
             android:exported="false" />
 
         <activity
+            android:name=".editeur_cat_enfant"
+            android:exported="false" />
+        
+        <activity
             android:name=".View.flip_editeur"
             android:exported="false" />
 
