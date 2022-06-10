@@ -1,8 +1,12 @@
 package com.example.luddiagappli.View;
 import androidx.appcompat.app.AppCompatActivity;
+
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.StrictMode;
 import android.util.Log;
+import android.view.View;
+import android.widget.Button;
 
 import com.example.luddiagappli.Model.Animateur;
 import com.example.luddiagappli.Model.User;
@@ -14,6 +18,10 @@ import java.sql.SQLException;
 import java.sql.Statement;
 
 public class MainActivity extends AppCompatActivity {
+
+    private Button buttonconnexion;
+    private Button buttoninscription;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -49,7 +57,40 @@ public class MainActivity extends AppCompatActivity {
       //User.SeConnecter("dylan.hacquart@flip.fr", "dylan");
 
         //Grille.GetJeuxGrille(1);
-    }
+
+
+
+
+
+        //PARTIE BOUTON
+
+        buttonconnexion = (Button) findViewById(R.id.buttonconnexion);
+        buttonconnexion.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    openConnexion();
+                }
+            });
+
+        buttoninscription = (Button) findViewById(R.id.buttoninscription);
+        buttoninscription.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v2) {
+                    openInscription();
+                }
+            });
+        }
+
+        public void openConnexion() {
+            Intent intent2 = new Intent(this, PageLogin.class);
+            startActivity(intent2);
+        }
+
+        public void openInscription() {
+            Intent intent = new Intent(this, PageRegister.class);
+            startActivity(intent);
+        }
+
 
 
 }

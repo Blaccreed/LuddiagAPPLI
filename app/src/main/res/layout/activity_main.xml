@@ -7,7 +7,7 @@
     tools:context=".View.MainActivity">
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/buttonconnexion"
         android:layout_width="0dp"
         android:layout_height="108dp"
         android:layout_marginStart="24dp"
@@ -21,7 +21,10 @@
 
     <Button
         android:id="@+id/buttoninscription"
-        android:layout_width="0dp"
+
+        android:layout_width="280dp"
+
+
         android:layout_height="108dp"
         android:layout_marginStart="24dp"
         android:layout_marginEnd="24dp"
