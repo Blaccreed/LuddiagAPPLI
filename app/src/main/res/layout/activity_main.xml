@@ -20,7 +20,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/buttoninscription"
         android:layout_width="0dp"
         android:layout_height="108dp"
         android:layout_marginStart="24dp"
