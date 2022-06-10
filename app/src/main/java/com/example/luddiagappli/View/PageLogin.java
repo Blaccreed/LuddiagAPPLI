@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.Button;
 
 import com.example.luddiagappli.Model.database;
 import com.example.luddiagappli.R;
@@ -18,6 +19,8 @@ import java.sql.Statement;
 public class PageLogin extends AppCompatActivity {
 
     private FloatingActionButton boutonArriereMain;
+    private Button connexionButton;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,6 +34,14 @@ public class PageLogin extends AppCompatActivity {
                 openMain();
             }
         });
+
+        connexionButton = (Button) findViewById(R.id.connexionButton);
+        connexionButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) { openPageGrille();
+            }
+        });
+
     }
 
     public boolean testCredentials(String username, String password)
@@ -62,6 +73,11 @@ public class PageLogin extends AppCompatActivity {
 
     public void openMain() {
         Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
+    }
+
+    public void openPageGrille() {
+        Intent intent = new Intent(this, PageGrille.class);
         startActivity(intent);
     }
 

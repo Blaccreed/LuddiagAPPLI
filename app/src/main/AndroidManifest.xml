@@ -13,10 +13,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.LuddiagAPPLI">
         <activity
-            android:name=".flip_createur"
+            android:name=".View.flip_createur"
             android:exported="false" />
         <activity
-            android:name=".flip_editeur"
+            android:name=".View.flip_editeur"
             android:exported="false" />
         <activity
             android:name=".FicheJeu"

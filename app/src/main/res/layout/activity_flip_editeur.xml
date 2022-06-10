@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/fondavecblanc"
-    tools:context=".flip_editeur">
+    tools:context=".View.flip_editeur">
 
     <TextView
         android:id="@+id/connexion4"
@@ -74,7 +74,7 @@
         android:layout_marginStart="60dp"
         android:layout_marginTop="40dp"
         android:layout_marginEnd="60dp"
-        android:backgroundtint="@color/black"
+        android:background="@color/black"
         android:fontFamily="@font/alike"
         android:backgroundTint="@color/rose"
         android:text="éco-ludique"
