@@ -83,7 +83,7 @@
         android:backgroundTint="@color/vert"
         android:fontFamily="@font/alike"
         android:text="Reflexion"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/imageView5"
         app:layout_constraintEnd_toEndOf="parent"
