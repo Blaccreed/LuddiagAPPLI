@@ -17,5 +17,9 @@
     <color name="orangedark">#BB6008</color>
 
     <color name="fondlogo">#ffd700</color>
+    <color name="vert">#55b25b</color>
+    <color name="bleu">#2dafe6</color>
+    <color name="jaune">#ffdd00</color>
+    <color name="rose">#e6007d</color>
 
 </resources>
