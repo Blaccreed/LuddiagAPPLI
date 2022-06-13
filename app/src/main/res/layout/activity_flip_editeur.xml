@@ -82,8 +82,8 @@
         android:layout_marginEnd="60dp"
         android:fontFamily="@font/alike"
         android:text="Divertissement"
-        android:backgroundTint="@color/jaune"
-        android:textColor="@color/black"
+        android:backgroundTint="@color/cyan"
+        android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/connexion4" />
