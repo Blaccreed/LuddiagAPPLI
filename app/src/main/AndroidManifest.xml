@@ -13,6 +13,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.LuddiagAPPLI">
         <activity
+            android:name=".createur_cat_reflexion"
+            android:exported="false" />
+        <activity
+            android:name=".createur_cat_divertissement"
+            android:exported="false" />
+        <activity
+            android:name=".createur_cat_enfant"
+            android:exported="false" />
+        <activity
             android:name=".editeur_cat_ecoludique"
             android:exported="false" />
         <activity
