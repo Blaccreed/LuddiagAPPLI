@@ -26,7 +26,7 @@
                 android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/button14" />
+                app:layout_constraintTop_toBottomOf="@+id/buttonBrigant" />
 
             <TextView
                 android:id="@+id/connexion5"
@@ -47,7 +47,7 @@
 
 
             <Button
-                android:id="@+id/buttonPanel1"
+                android:id="@+id/buttonTokyo"
                 android:layout_width="0dp"
                 android:layout_height="50dp"
                 android:layout_marginStart="24dp"
@@ -60,7 +60,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/connexion5" />
 
             <Button
-                android:id="@+id/button12"
+                android:id="@+id/buttonPlace"
                 android:layout_width="0dp"
                 android:layout_height="50dp"
                 android:layout_marginStart="24dp"
@@ -70,10 +70,10 @@
                 android:text="PLACE DE LA BOURSE"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/buttonPanel1" />
+                app:layout_constraintTop_toBottomOf="@+id/buttonTokyo" />
 
             <Button
-                android:id="@+id/button13"
+                android:id="@+id/buttonBla"
                 android:layout_width="0dp"
                 android:layout_height="50dp"
                 android:layout_marginStart="24dp"
@@ -83,10 +83,10 @@
                 android:text="BLA VLOX FLUX ZIK "
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/button12" />
+                app:layout_constraintTop_toBottomOf="@+id/buttonPlace" />
 
             <Button
-                android:id="@+id/button14"
+                android:id="@+id/buttonBrigant"
                 android:layout_width="0dp"
                 android:layout_height="50dp"
                 android:layout_marginStart="24dp"
@@ -96,11 +96,10 @@
                 android:text="BRIGANTS"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/button13" />
-
+                app:layout_constraintTop_toBottomOf="@+id/buttonBla" />
 
             <Button
-                android:id="@+id/boutonArriere5"
+                android:id="@+id/boutonArriere"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
@@ -113,6 +112,8 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:srcCompat="@android:drawable/ic_menu_revert" />
+
+
         </androidx.constraintlayout.widget.ConstraintLayout>
 
     </androidx.constraintlayout.widget.ConstraintLayout>

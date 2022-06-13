@@ -27,7 +27,7 @@
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/button14" />
+            app:layout_constraintTop_toBottomOf="@+id/buttonTune" />
 
         <TextView
             android:id="@+id/connexion5"
@@ -48,7 +48,7 @@
 
 
         <Button
-            android:id="@+id/buttonPanel1"
+            android:id="@+id/buttonArt"
             android:layout_width="0dp"
             android:layout_height="50dp"
             android:layout_marginStart="24dp"
@@ -61,7 +61,7 @@
             app:layout_constraintTop_toBottomOf="@+id/connexion5" />
 
         <Button
-            android:id="@+id/button12"
+            android:id="@+id/buttonFra"
             android:layout_width="0dp"
             android:layout_height="50dp"
             android:layout_marginStart="24dp"
@@ -71,10 +71,10 @@
             android:text="FRAME"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/buttonPanel1" />
+            app:layout_constraintTop_toBottomOf="@+id/buttonArt" />
 
         <Button
-            android:id="@+id/button13"
+            android:id="@+id/buttonHer"
             android:layout_width="0dp"
             android:layout_height="50dp"
             android:layout_marginStart="24dp"
@@ -84,10 +84,10 @@
             android:text="HEREDITY "
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/button12" />
+            app:layout_constraintTop_toBottomOf="@+id/buttonFra" />
 
         <Button
-            android:id="@+id/button14"
+            android:id="@+id/buttonTune"
             android:layout_width="0dp"
             android:layout_height="50dp"
             android:layout_marginStart="24dp"
@@ -97,11 +97,11 @@
             android:text="TUNEREG"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/button13" />
+            app:layout_constraintTop_toBottomOf="@+id/buttonHer" />
 
 
     <Button
-        android:id="@+id/boutonArriere7"
+        android:id="@+id/boutonArriere"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"

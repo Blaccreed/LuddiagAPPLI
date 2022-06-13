@@ -61,7 +61,7 @@
         app:layout_constraintTop_toBottomOf="@+id/connexion" />
 
     <Button
-        android:id="@+id/button6"
+        android:id="@+id/buttondivertissement"
         android:layout_width="0dp"
         android:layout_height="90dp"
         android:layout_marginStart="32dp"
@@ -90,10 +90,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button6" />
+        app:layout_constraintTop_toBottomOf="@+id/buttondivertissement" />
 
     <Button
-        android:id="@+id/button11"
+        android:id="@+id/buttonReflexion"
         android:layout_width="0dp"
         android:layout_height="84dp"
         android:layout_marginStart="32dp"
@@ -117,7 +117,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button11"
+        app:layout_constraintTop_toBottomOf="@+id/buttonReflexion"
         app:srcCompat="@drawable/createur" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

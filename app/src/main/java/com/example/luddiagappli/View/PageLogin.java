@@ -46,7 +46,7 @@ public class PageLogin extends AppCompatActivity {
 
     }
 
-    public boolean testCredentials(String username, String password)
+   /* public boolean testCredentials(String username, String password)
     {
         Integer nbConnection = 0;
         database db = new database();
@@ -71,7 +71,7 @@ public class PageLogin extends AppCompatActivity {
             return false;
         }
     }
-
+*/
 
     public void openMain() {
         Intent intent = new Intent(this, MainActivity.class);
@@ -80,6 +80,10 @@ public class PageLogin extends AppCompatActivity {
 
     public void openPageGrille() {
 
+        Intent intent2 = new Intent(this, PageGrille.class);
+        startActivity(intent2);
+
+/*
         EditText mailLogin = findViewById(R.id.mailLogin);
         EditText passwordLogin = findViewById(R.id.mailPassword);
 
@@ -91,11 +95,12 @@ public class PageLogin extends AppCompatActivity {
             return;
         }
         if(testCredentials(mailLoginText, passwordLoginText)){
-            Intent intent = new Intent(this, PageGrille.class);
-            startActivity(intent);
+            Intent intent2 = new Intent(this, PageGrille.class);
+            startActivity(intent2);
         }else {
             Toast.makeText(this,"Mail ou mot de passe incorrect",Toast.LENGTH_SHORT).show();
         }
     }
-
+*/
+    }
 }

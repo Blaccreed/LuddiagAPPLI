@@ -16,6 +16,8 @@ public class flip_createur extends AppCompatActivity {
 
     private Button buttonEnfant;
     private Button buttonArriere;
+    private Button buttondivertissement;
+    private Button buttonReflexion;
 
 
 
@@ -29,7 +31,7 @@ public class flip_createur extends AppCompatActivity {
         buttonEnfant.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v3) {
-                openEditeurEnfant();
+                openCreateurEnfant();
             }
         });
 
@@ -41,16 +43,44 @@ public class flip_createur extends AppCompatActivity {
             }
         });
 
+        buttondivertissement = (Button) findViewById(R.id.buttondivertissement);
+        buttondivertissement.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v4) {
+                openDivertissement();
+            }
+        });
+
+        buttonReflexion = (Button) findViewById(R.id.buttonReflexion);
+        buttonReflexion.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v5) {
+                openReflexion();
+            }
+        });
+
+
+
     }
 
-    public void openEditeurEnfant() {
-        Intent intent2 = new Intent(this, EditeurCatEnfant.class);
+    public void openCreateurEnfant() {
+        Intent intent2 = new Intent(this, createur_cat_enfant.class);
         startActivity(intent2);
     }
 
     public void openArriere() {
         Intent intent = new Intent(this, PageGrille.class);
         startActivity(intent);
+    }
+
+    public void openDivertissement() {
+        Intent intent3 = new Intent(this, createur_cat_divertissement.class);
+        startActivity(intent3);
+    }
+
+    public void openReflexion() {
+        Intent intent4 = new Intent(this, createur_cat_reflexion.class);
+        startActivity(intent4);
     }
 
     //buttonEnfant

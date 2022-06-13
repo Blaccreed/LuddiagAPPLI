@@ -27,7 +27,7 @@
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/button14" />
+            app:layout_constraintTop_toBottomOf="@+id/buttonLune" />
 
         <TextView
             android:id="@+id/connexion5"
@@ -48,7 +48,7 @@
 
 
         <Button
-            android:id="@+id/buttonPanel1"
+            android:id="@+id/buttonMonster"
             android:layout_width="0dp"
             android:layout_height="50dp"
             android:layout_marginStart="24dp"
@@ -61,7 +61,7 @@
             app:layout_constraintTop_toBottomOf="@+id/connexion5" />
 
         <Button
-            android:id="@+id/button12"
+            android:id="@+id/buttonCampagnol"
             android:layout_width="0dp"
             android:layout_height="50dp"
             android:layout_marginStart="24dp"
@@ -71,10 +71,10 @@
             android:text="CAMPAGNOL"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/buttonPanel1" />
+            app:layout_constraintTop_toBottomOf="@+id/buttonMonster" />
 
         <Button
-            android:id="@+id/button13"
+            android:id="@+id/buttonOni"
             android:layout_width="0dp"
             android:layout_height="50dp"
             android:layout_marginStart="24dp"
@@ -84,10 +84,10 @@
             android:text="ONIRIGAMI "
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/button12" />
+            app:layout_constraintTop_toBottomOf="@+id/buttonCampagnol" />
 
         <Button
-            android:id="@+id/button14"
+            android:id="@+id/buttonLune"
             android:layout_width="0dp"
             android:layout_height="50dp"
             android:layout_marginStart="24dp"
@@ -97,12 +97,12 @@
             android:text="1,2,3 LUNE"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/button13" />
+            app:layout_constraintTop_toBottomOf="@+id/buttonOni" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <Button
-        android:id="@+id/boutonArriere4"
+        android:id="@+id/boutonArriere"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
