@@ -13,7 +13,7 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton;
 public class ValidationActivity extends AppCompatActivity {
 
     private Button boutonAvant;
-    private FloatingActionButton boutonArriere;
+    private Button boutonArriere;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,7 +28,7 @@ public class ValidationActivity extends AppCompatActivity {
             }
         });
 
-        boutonArriere = (FloatingActionButton) findViewById(R.id.boutonArriere);
+        boutonArriere = (Button) findViewById(R.id.boutonArriere);
         boutonArriere.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v2) {
@@ -38,12 +38,12 @@ public class ValidationActivity extends AppCompatActivity {
     }
 
     public void openFin() {
-        Intent intent2 = new Intent(this, VoteTermine.class);
-        startActivity(intent2);
+        Intent intent = new Intent(this, VoteTermine.class);
+        startActivity(intent);
     }
 
     public void openFiche() {
-        Intent intent = new Intent(this, FicheJeu.class);
-        startActivity(intent);
+        Intent intent2 = new Intent(this, FicheJeu.class);
+        startActivity(intent2);
     }
 }

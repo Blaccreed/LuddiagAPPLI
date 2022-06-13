@@ -18,7 +18,7 @@ import java.sql.Statement;
 
 public class PageLogin extends AppCompatActivity {
 
-    private FloatingActionButton boutonArriereMain;
+    private Button boutonArriereMain;
     private Button connexionButton;
 
 
@@ -27,7 +27,7 @@ public class PageLogin extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_page_login);
 
-        boutonArriereMain = (FloatingActionButton) findViewById(R.id.boutonArriereMain);
+        boutonArriereMain = (Button) findViewById(R.id.boutonArriereMain);
         boutonArriereMain.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v2) {

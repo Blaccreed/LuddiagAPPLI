@@ -43,20 +43,20 @@ public class MainActivity extends AppCompatActivity {
         User.InscriptionJoueur("'tezaet'", "'tezaetz'", "'Taeztzte'", "'teafaea'", "'tEZAZE'", "'EZZAZt'", "'tZEREZA'");
         //Example de récupération de donnée
         database db = new database();
-        try {
-            Statement st = db.getExtraConnection().createStatement();
-            //User.SeConnecter("admin@flip.fr","admin");
-            String sql = "SELECT * FROM user_flip";
-            ResultSet rs = st.executeQuery(sql);
-            while(rs.next())
-            {
-                String username = rs.getString("nom_user");
-                Log.d("DB" , username);
-            }
-        } catch (SQLException e) {
-            Log.d("DB", "Erreur pour insert !");
-            e.printStackTrace();
-        }
+//        try {
+//            Statement st = db.getExtraConnection().createStatement();
+//            //User.SeConnecter("admin@flip.fr","admin");
+//            String sql = "SELECT * FROM user_flip";
+//            ResultSet rs = st.executeQuery(sql);
+//            while(rs.next())
+//            {
+//                String username = rs.getString("nom_user");
+//                Log.d("DB" , username);
+//            }
+//        } catch (SQLException e) {
+//            Log.d("DB", "Erreur pour insert !");
+//            e.printStackTrace();
+//        }
       //User.SeConnecter("dylan.hacquart@flip.fr", "dylan");
 
         //Grille.GetJeuxGrille(1);

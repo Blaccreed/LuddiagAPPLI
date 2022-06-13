@@ -12,7 +12,7 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 public class PageGrille extends AppCompatActivity {
 
-    private FloatingActionButton boutonArriereConnexion;
+    private Button boutonArriereConnexion;
     private Button buttonCreateur;
     private Button buttonEditeur;
 
@@ -22,7 +22,7 @@ public class PageGrille extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_page_grille);
 
-        boutonArriereConnexion = (FloatingActionButton) findViewById(R.id.boutonArriereConnexion);
+        boutonArriereConnexion = (Button) findViewById(R.id.boutonArriereConnexion);
         boutonArriereConnexion.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v2) {

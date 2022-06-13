@@ -15,6 +15,7 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton;
 public class EditeurCatEnfant extends AppCompatActivity {
 
     private Button buttonPanel1;
+    private Button boutonArriere;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,12 +30,25 @@ public class EditeurCatEnfant extends AppCompatActivity {
             }
         });
 
+        boutonArriere = (Button) findViewById(R.id.boutonArriere);
+        boutonArriere.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) { openRetour();
+            }
+        });
+
     }
 
     public void openFicheJeu() {
         Intent intent = new Intent(this, FicheJeu.class);
         startActivity(intent);
     }
+
+    public void openRetour() {
+        Intent intent = new Intent(this, PageGrille.class);
+        startActivity(intent);
+    }
+
 
 
 }

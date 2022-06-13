@@ -15,7 +15,7 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton;
 public class flip_createur extends AppCompatActivity {
 
     private Button buttonEnfant;
-    private FloatingActionButton buttonArriere;
+    private Button buttonArriere;
 
 
 
@@ -33,7 +33,7 @@ public class flip_createur extends AppCompatActivity {
             }
         });
 
-        buttonArriere = (FloatingActionButton) findViewById(R.id.boutonArriere);
+        buttonArriere = (Button) findViewById(R.id.boutonArriere);
         buttonArriere.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v2) {
