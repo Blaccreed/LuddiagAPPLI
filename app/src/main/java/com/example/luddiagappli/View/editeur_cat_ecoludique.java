@@ -1,8 +1,10 @@
-package com.example.luddiagappli;
+package com.example.luddiagappli.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
+import com.example.luddiagappli.R;
 
 public class editeur_cat_ecoludique extends AppCompatActivity {
 

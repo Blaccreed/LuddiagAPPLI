@@ -7,11 +7,25 @@
     tools:context=".View.IntroUn"
     android:background="@drawable/introun">
 
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="307dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="308dp"
+        android:text="Prêt à donner ton avis sur plein de jeux ?"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <Button
         android:id="@+id/boutonAvant"
-        android:layout_width="137dp"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="16dp"
+        android:layout_marginStart="230dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="20dp"
         android:layout_marginBottom="692dp"
         android:fontFamily="@font/alike"
         android:text="OK !"
@@ -19,7 +33,20 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="192dp"
+        android:text="Bienvenue sur LUD'di@g"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
