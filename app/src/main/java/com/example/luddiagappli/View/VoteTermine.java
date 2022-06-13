@@ -28,7 +28,7 @@ public class VoteTermine extends AppCompatActivity {
 
 
     public void openActivity2() {
-        Intent intent = new Intent(this, EditeurCatEnfant.class);
+        Intent intent = new Intent(this, editeur_cat_enfant.class);
         startActivity(intent);
     }
 }

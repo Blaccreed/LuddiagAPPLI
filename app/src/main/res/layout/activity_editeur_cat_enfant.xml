@@ -21,7 +21,7 @@
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button15" />
+        app:layout_constraintTop_toBottomOf="@+id/buttonPata" />
 
     <TextView
         android:id="@+id/connexion5"
@@ -61,7 +61,7 @@
 
 
     <Button
-        android:id="@+id/buttonPanel1"
+        android:id="@+id/buttonBouh"
         android:layout_width="0dp"
         android:layout_height="50dp"
         android:layout_marginStart="24dp"
@@ -74,7 +74,7 @@
         app:layout_constraintTop_toBottomOf="@+id/connexion5" />
 
     <Button
-        android:id="@+id/button12"
+        android:id="@+id/buttonEsc"
         android:layout_width="0dp"
         android:layout_height="50dp"
         android:layout_marginStart="24dp"
@@ -84,10 +84,10 @@
         android:text="ESCARGOT SPRINT"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonPanel1" />
+        app:layout_constraintTop_toBottomOf="@+id/buttonBouh" />
 
     <Button
-        android:id="@+id/button13"
+        android:id="@+id/buttonDrag"
         android:layout_width="0dp"
         android:layout_height="50dp"
         android:layout_marginStart="24dp"
@@ -97,10 +97,10 @@
         android:text="DRAGOMINO"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button12" />
+        app:layout_constraintTop_toBottomOf="@+id/buttonEsc" />
 
     <Button
-        android:id="@+id/button14"
+        android:id="@+id/buttonFrouss"
         android:layout_width="0dp"
         android:layout_height="50dp"
         android:layout_marginStart="24dp"
@@ -110,10 +110,10 @@
         android:text="FROUSS'FANTOMES"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button13" />
+        app:layout_constraintTop_toBottomOf="@+id/buttonDrag" />
 
     <Button
-        android:id="@+id/button15"
+        android:id="@+id/buttonPata"
         android:layout_width="0dp"
         android:layout_height="50dp"
         android:layout_marginStart="24dp"
@@ -123,5 +123,6 @@
         android:text="PATATRAP QUEST"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button14" />
+        app:layout_constraintTop_toBottomOf="@+id/buttonFrouss" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

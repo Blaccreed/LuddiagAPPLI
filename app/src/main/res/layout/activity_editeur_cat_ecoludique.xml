@@ -31,7 +31,7 @@
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/button15" />
+            app:layout_constraintTop_toBottomOf="@+id/buttonVel" />
 
         <TextView
             android:id="@+id/connexion5"
@@ -52,7 +52,7 @@
 
 
         <Button
-            android:id="@+id/buttonPanel1"
+            android:id="@+id/buttonFeel"
             android:layout_width="0dp"
             android:layout_height="50dp"
             android:layout_marginStart="24dp"
@@ -65,7 +65,7 @@
             app:layout_constraintTop_toBottomOf="@+id/connexion5" />
 
         <Button
-            android:id="@+id/button12"
+            android:id="@+id/buttonMar"
             android:layout_width="0dp"
             android:layout_height="50dp"
             android:layout_marginStart="24dp"
@@ -75,10 +75,10 @@
             android:text="LA MARCHE DU CRABE"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/buttonPanel1" />
+            app:layout_constraintTop_toBottomOf="@+id/buttonFeel" />
 
         <Button
-            android:id="@+id/button13"
+            android:id="@+id/buttonRat"
             android:layout_width="0dp"
             android:layout_height="50dp"
             android:layout_marginStart="24dp"
@@ -88,10 +88,10 @@
             android:text="RATAYO !"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/button12" />
+            app:layout_constraintTop_toBottomOf="@+id/buttonMar" />
 
         <Button
-            android:id="@+id/button14"
+            android:id="@+id/buttonTur"
             android:layout_width="0dp"
             android:layout_height="50dp"
             android:layout_marginStart="24dp"
@@ -101,10 +101,10 @@
             android:text="TURBULENCES"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/button13" />
+            app:layout_constraintTop_toBottomOf="@+id/buttonRat" />
 
         <Button
-            android:id="@+id/button15"
+            android:id="@+id/buttonVel"
             android:layout_width="0dp"
             android:layout_height="50dp"
             android:layout_marginStart="24dp"
@@ -114,12 +114,12 @@
             android:text="VELONIMO "
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/button14" />
+            app:layout_constraintTop_toBottomOf="@+id/buttonTur" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 
     <Button
-        android:id="@+id/boutonArriere3"
+        android:id="@+id/boutonArriere"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"

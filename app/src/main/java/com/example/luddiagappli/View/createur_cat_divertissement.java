@@ -74,7 +74,4 @@ public class createur_cat_divertissement extends AppCompatActivity {
         startActivity(intent2);
     }
 
-
-
-
 }

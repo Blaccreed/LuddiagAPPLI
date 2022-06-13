@@ -26,7 +26,7 @@
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/button15" />
+            app:layout_constraintTop_toBottomOf="@+id/buttonvisite" />
 
         <TextView
             android:id="@+id/connexion5"
@@ -66,7 +66,7 @@
 
 
         <Button
-            android:id="@+id/buttonPanel1"
+            android:id="@+id/buttonGor"
             android:layout_width="0dp"
             android:layout_height="50dp"
             android:layout_marginStart="24dp"
@@ -79,7 +79,7 @@
             app:layout_constraintTop_toBottomOf="@+id/connexion5" />
 
         <Button
-            android:id="@+id/button12"
+            android:id="@+id/buttonLueu"
             android:layout_width="0dp"
             android:layout_height="50dp"
             android:layout_marginStart="24dp"
@@ -89,10 +89,10 @@
             android:text="LUEUR"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/buttonPanel1" />
+            app:layout_constraintTop_toBottomOf="@+id/buttonGor" />
 
         <Button
-            android:id="@+id/button13"
+            android:id="@+id/buttonCrime"
             android:layout_width="0dp"
             android:layout_height="50dp"
             android:layout_marginStart="24dp"
@@ -102,10 +102,10 @@
             android:text="MICROMACRO : CRIME CITY"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/button12" />
+            app:layout_constraintTop_toBottomOf="@+id/buttonLueu" />
 
         <Button
-            android:id="@+id/button14"
+            android:id="@+id/buttonTrek"
             android:layout_width="0dp"
             android:layout_height="50dp"
             android:layout_marginStart="24dp"
@@ -115,10 +115,10 @@
             android:text="TREK12"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/button13" />
+            app:layout_constraintTop_toBottomOf="@+id/buttonCrime" />
 
         <Button
-            android:id="@+id/button15"
+            android:id="@+id/buttonvisite"
             android:layout_width="0dp"
             android:layout_height="50dp"
             android:layout_marginStart="24dp"
@@ -128,7 +128,7 @@
             android:text="VISITE ROYALE"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/button14" />
+            app:layout_constraintTop_toBottomOf="@+id/buttonTrek" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 

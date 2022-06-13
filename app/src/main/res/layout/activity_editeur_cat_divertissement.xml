@@ -26,7 +26,7 @@
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/button15" />
+            app:layout_constraintTop_toBottomOf="@+id/buttonLeg" />
 
         <TextView
             android:id="@+id/connexion5"
@@ -47,7 +47,7 @@
 
 
         <Button
-            android:id="@+id/buttonPanel1"
+            android:id="@+id/buttonRest"
             android:layout_width="0dp"
             android:layout_height="50dp"
             android:layout_marginStart="24dp"
@@ -60,7 +60,7 @@
             app:layout_constraintTop_toBottomOf="@+id/connexion5" />
 
         <Button
-            android:id="@+id/button12"
+            android:id="@+id/buttonrico"
             android:layout_width="0dp"
             android:layout_height="50dp"
             android:layout_marginStart="24dp"
@@ -70,10 +70,10 @@
             android:text="RICOCHET"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/buttonPanel1" />
+            app:layout_constraintTop_toBottomOf="@+id/buttonRest" />
 
         <Button
-            android:id="@+id/button13"
+            android:id="@+id/buttonsky"
             android:layout_width="0dp"
             android:layout_height="50dp"
             android:layout_marginStart="24dp"
@@ -83,10 +83,10 @@
             android:text="SKYJO"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/button12" />
+            app:layout_constraintTop_toBottomOf="@+id/buttonrico" />
 
         <Button
-            android:id="@+id/button14"
+            android:id="@+id/buttonTop"
             android:layout_width="0dp"
             android:layout_height="50dp"
             android:layout_marginStart="24dp"
@@ -96,10 +96,10 @@
             android:text="TOP TEN"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/button13" />
+            app:layout_constraintTop_toBottomOf="@+id/buttonsky" />
 
         <Button
-            android:id="@+id/button15"
+            android:id="@+id/buttonLeg"
             android:layout_width="0dp"
             android:layout_height="50dp"
             android:layout_marginStart="24dp"
@@ -109,12 +109,13 @@
             android:text="TRESORS LEGENDAIRES "
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/button14" />
+            app:layout_constraintTop_toBottomOf="@+id/buttonTop" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 
     <Button
-        android:id="@+id/boutonArriere2"
+        android:id="@+id/boutonArriere"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"

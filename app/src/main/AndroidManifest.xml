@@ -34,7 +34,7 @@
             android:name=".View.flip_createur"
             android:exported="false" />
         <activity
-            android:name=".View.EditeurCatEnfant"
+            android:name=".View.editeur_cat_enfant"
             android:exported="false" />
         <activity
             android:name=".View.flip_editeur"
