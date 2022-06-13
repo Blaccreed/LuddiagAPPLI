@@ -7,6 +7,8 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
+import android.widget.Toast;
 
 import com.example.luddiagappli.Model.database;
 import com.example.luddiagappli.R;
@@ -50,7 +52,7 @@ public class PageLogin extends AppCompatActivity {
         database db = new database();
         try {
             Statement st = db.getExtraConnection().createStatement();
-            String sql = "SELECT count(*) as nbConnection FROM user_flip where nom_user= '"+username+"' and mdp_user'"+password+"'";
+            String sql = "SELECT count(*) as nbConnection FROM user_flip where mail_user= '"+username+"' and mdp_user='"+password+"'";
             ResultSet rs = st.executeQuery(sql);
             while(rs.next())
             {
@@ -77,8 +79,23 @@ public class PageLogin extends AppCompatActivity {
     }
 
     public void openPageGrille() {
-        Intent intent = new Intent(this, PageGrille.class);
-        startActivity(intent);
+
+        EditText mailLogin = findViewById(R.id.mailLogin);
+        EditText passwordLogin = findViewById(R.id.mailPassword);
+
+        String mailLoginText = mailLogin.getText().toString();
+        String passwordLoginText = passwordLogin.getText().toString();
+
+        if (mailLoginText.isEmpty() || passwordLoginText.isEmpty()) {
+            Toast.makeText(this,"Veuillez remplir tout les champs",Toast.LENGTH_SHORT).show();
+            return;
+        }
+        if(testCredentials(mailLoginText, passwordLoginText)){
+            Intent intent = new Intent(this, PageGrille.class);
+            startActivity(intent);
+        }else {
+            Toast.makeText(this,"Mail ou mot de passe incorrect",Toast.LENGTH_SHORT).show();
+        }
     }
 
 }
