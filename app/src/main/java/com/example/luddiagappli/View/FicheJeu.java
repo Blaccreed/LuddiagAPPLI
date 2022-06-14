@@ -12,6 +12,7 @@ import com.example.luddiagappli.R;
 public class FicheJeu extends AppCompatActivity {
 
     private Button button;
+    private Button buttonArriere;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,6 +25,20 @@ public class FicheJeu extends AppCompatActivity {
             public void onClick(View v) { openActivity2();
             }
         });
+
+        buttonArriere = (Button) findViewById(R.id.boutonArriere);
+        buttonArriere.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v2) {
+                openArriere();
+            }
+        });
+    }
+
+
+    public void openArriere() {
+        Intent intent = new Intent(this, editeur_cat_enfant.class);
+        startActivity(intent);
     }
 
     public void openActivity2() {
